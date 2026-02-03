@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dancing Profile</title>
+
+    <style>
+      /* BASE */
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background-color: #1e1e2f;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      /* MAIN CONTAINER */
+      .container {
+        display: flex;
+        flex: 1; /* pushes footer to bottom */
+      }
+
+      /* LEFT PROFILE SECTION */
+      .profile {
+        width: 30%;
+        background: linear-gradient(180deg, #ff512f, #dd2476);
+        color: #fff;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      .profile img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        border: 4px solid #fff;
+        margin-bottom: 15px;
+        object-fit: cover;
+      }
+
+      .profile h2 {
+        margin: 10px 0 5px;
+        font-size: 24px;
+      }
+
+      .profile p {
+        font-size: 14px;
+        opacity: 0.95;
+      }
+
+      /* RIGHT CONTENT SECTION */
+      .content {
+        width: 70%;
+        padding: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+      }
+
+      .card {
+        padding: 22px;
+        border-radius: 14px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+      }
+
+      .hobbies {
+        background-color: #ffe066;
+      }
+
+      .passion {
+        background-color: #72efdd;
+      }
+
+      .pastwork {
+        background-color: #cdb4db;
+        grid-column: span 2;
+      }
+
+      .social {
+        background-color: #ffafcc;
+        grid-column: span 2;
+      }
+
+      .card h3 {
+        margin-top: 0;
+        color: #2b2b2b;
+      }
+
+      .card p {
+        color: #333;
+        font-size: 14px;
+        line-height: 1.7;
+      }
+
+      /* FOOTER */
+      .simple-footer {
+        text-align: center;
+        padding: 16px 0;
+        background-color: #f5f6ff;
+      }
+
+      .footer-links a {
+        margin: 0 12px;
+        text-decoration: none;
+        font-weight: 500;
+        color: #6c63ff;
+      }
+
+      .footer-links a:hover {
+        text-decoration: underline;
+      }
+
+      .footer-copy {
+        margin-top: 6px;
+        font-size: 14px;
+        color: #555;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- MAIN CONTENT -->
+    <div class="container">
+      <!-- LEFT PROFILE -->
+      <div class="profile">
+        <img src="painting.jpg" alt="Profile Image" />
+        <h2>Hishita Sabhani</h2>
+        <p>Dancer & Creative Learner</p>
+
+        <p style="margin-top: 18px">
+          My desire is to express emotions through movement, rhythm, and
+          creativity while continuously growing as a dancer.
+        </p>
+      </div>
+
+      <!-- RIGHT CONTENT -->
+      <div class="content">
+        <div class="card hobbies">
+          <h3>Hobbies</h3>
+          <p>
+            Dancing is my favorite hobby where I explore different styles,
+            practice choreography, and enjoy expressing myself through rhythm
+            and movement.
+          </p>
+        </div>
+
+        <div class="card passion">
+          <h3>Passion</h3>
+          <p>
+            I am deeply passionate about dance as it allows me to connect
+            emotions with music, improve confidence, and maintain physical and
+            mental balance.
+          </p>
+        </div>
+
+        <div class="card pastwork">
+          <h3>Past Work</h3>
+          <p>
+            I have participated in school and college cultural events, group
+            performances, and practice sessions, gaining experience in
+            coordination, stage presence, and teamwork.
+          </p>
+        </div>
+
+        <div class="card social">
+          <h3>Social Life</h3>
+          <p>
+            Dancing helps me connect with others through group practices, stage
+            performances, and cultural activities, building strong friendships
+            and communication skills.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER (BOTTOM OF PAGE) -->
+    <div class="simple-footer">
+      <div class="footer-links">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+      </div>
+      <div class="footer-copy">© 2026</div>
+    </div>
+  </body>
+</html>
