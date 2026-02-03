@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Traffic Light</title>
+
+  <style>
+    .box {
+      width: 80px;
+      padding: 10px;
+      background: black;
+      margin: auto;
+      border-radius: 10px;
+    }
+
+    .light {
+      width: 50px;
+      height: 50px;
+      background: gray;
+      border-radius: 50%;
+      margin: 10px auto;
+    }
+
+    .red { background: red; }
+    .yellow { background: yellow; }
+    .green { background: green; }
+  </style>
+</head>
+
+<body align="center">
+
+  <h3>Traffic Light</h3>
+
+  <div class="box">
+    <div id="r" class="light"></div>
+    <div id="y" class="light"></div>
+    <div id="g" class="light"></div>
+  </div>
+   <div>
+    <h2>ROLL_NO:59</h2>
+  </div>
+  <br>
+  <button onclick="changeLight()">Change</button>
+
+  <script>
+    let currentLight = "red";
+
+    function changeLight() {
+      r.style.background = "gray";
+      y.style.background = "gray";
+      g.style.background = "gray";
+
+      if (currentLight == "red") {
+        g.style.background = "green";
+        currentLight = "green";
+      } 
+      else if (currentLight == "green") {
+        y.style.background = "yellow";
+        currentLight = "yellow";
+      } 
+      else {
+        r.style.background = "red";
+        currentLight = "red";
+      }
+    }
+
+    r.style.background = "red";
+  </script>
+
+</body>
+</html>
